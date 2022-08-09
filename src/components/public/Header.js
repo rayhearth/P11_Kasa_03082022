@@ -14,7 +14,7 @@ const Header = () => {
                         <img src={logo_o} alt='logo kasa'/>
                     </Link>
                 </div>
-                <ul className=''>
+                <ul className='headerMenu'>
                     <li><Link to='/home'>Accueil</Link></li>
                     <li><Link to='/about-us'>A Propos</Link></li>
                 </ul>
