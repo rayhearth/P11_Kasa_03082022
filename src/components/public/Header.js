@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import logo_o from '@/assets/images/logo_o.svg'
 
 
-import './Header.css'
+// import './Header.css'
 
 const Header = () => {
     return (
@@ -15,8 +15,8 @@ const Header = () => {
                     </Link>
                 </div>
                 <ul className='headerMenu'>
-                    <li><Link to='/home'>Accueil</Link></li>
-                    <li><Link to='/about-us'>A Propos</Link></li>
+                    <Link to='/home' className={(nav) => (nav.isActive ? 'nav-active':'')}><li>Accueil</li></Link>
+                    <Link to='/about-us' className={(nav) => (nav.isActive ? 'nav-active':'')}><li>A Propos</li></Link>
                 </ul>
             </nav>
         </header>
