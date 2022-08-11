@@ -1,17 +1,17 @@
-import data from '../../public/api/data.json'
+import data from '@/api/data.json'
 
 const AllAppart = () => {
-    return data.map((d) => {
+    return data.map((lgt) => {
         return {
-            id: data.id,
-            title: data.title,
-            cover: data.cover
+            id: lgt.id,
+            title: lgt.title,
+            cover: lgt.cover
         }
     })
 }
 
 const AppartById = (id) => {
-    return data.filter((d) => d.id === id)[0]
+    return data.filter((lgt) => lgt.id === id)[0]
 }
 
 export {

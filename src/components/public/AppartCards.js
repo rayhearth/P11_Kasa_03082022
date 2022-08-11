@@ -1,4 +1,5 @@
 import React from 'react';
+
 // import {useNavigate} from 'react-router-dom'
 
 const openAppart = (e) =>{
@@ -6,13 +7,12 @@ const openAppart = (e) =>{
 console.log(e)
 }
 
-const AppartCards = () => {
+const AppartCards = (props) => {
     return (
-        <div className='appartCards' onClick={(e) => openAppart(e)}>
-            
-            <p>titre location</p>
-            
-        </div>
+        <article className='appartCards' onClick={(e) => openAppart(e)}>
+            <img src={props.cover} alt={props.title} />
+            <h2>{props.title}</h2>
+        </article>
     );
 };
 
