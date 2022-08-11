@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Accommodation = () => {
+const Appartements = () => {
     return (
         <div>
             Fiche Logements !
@@ -9,4 +9,4 @@ const Accommodation = () => {
     );
 };
 
-export default Accommodation;
+export default Appartements;

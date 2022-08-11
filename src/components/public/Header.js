@@ -15,8 +15,8 @@ const Header = () => {
                     </Link>
                 </div>
                 <ul className='headerMenu'>
-                    <Link to='/home' className={(nav) => (nav.isActive ? 'nav-active':'')}><li>Accueil</li></Link>
-                    <Link to='/about-us' className={(nav) => (nav.isActive ? 'nav-active':'')}><li>A Propos</li></Link>
+                    <li><Link to='/home'>Accueil</Link></li>
+                    <li><Link to='/about-us'>A Propos</Link></li>
                 </ul>
             </nav>
         </header>
