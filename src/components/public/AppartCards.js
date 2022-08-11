@@ -1,19 +1,14 @@
 import React from 'react';
 
-// import {useNavigate} from 'react-router-dom'
 
-const openAppart = (e) =>{
-    // let navigate = useNavigate()
-console.log(e)
-}
-
-const AppartCards = (props) => {
+const AppartCards = ({cover,title}) => {
     return (
-        <article className='appartCards' onClick={(e) => openAppart(e)}>
-            <img src={props.cover} alt={props.title} />
-            <h2>{props.title}</h2>
+        <article className='appartCards'>
+            <img src={cover} alt={title} />
+            <h2>{title}</h2>
         </article>
     );
 };
 
 export default AppartCards;
+

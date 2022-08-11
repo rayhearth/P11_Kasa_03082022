@@ -1,5 +1,13 @@
-.home{
-    background-color: $gray-light;
+.home {
     border-radius: 15px;
     padding: 0 100px;
+    section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        padding: 50px;
+        background-color: $gray-light;
+        margin: 40px 0;
+        border-radius: 15px;
+    }
 }

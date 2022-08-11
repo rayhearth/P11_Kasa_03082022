@@ -1,9 +1,16 @@
-.appartCards{
-    height: 344px;
-    width: 340px;
-    background-color: $red;
-    border-radius: 15px;
-    p{
+article {
+    position: relative;
+    img {
+        border-radius: 15px;
+        height: 344px;
+        width: 340px;
+    }
+    h2 {
         color: white;
+        bottom: 20px;
+        left: 20px;
+        position: absolute;
+        font-size: 18px;
+        width: 300px;
     }
 }
