@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Banner from '@/components/public/Banner';
-import AppartCards from '@/components/public/AppartCards';
+import Banner from '@/components/Banner';
+import AppartCards from '@/components/AppartCards';
 import { AllAppart } from '@/_services/DataManager';
 
 import { Link } from 'react-router-dom';

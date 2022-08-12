@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import {Layout, Home, Appartements, AboutUs} from '@/pages/Public'
+import {Layout, Home, Appartements, AboutUs} from '@/pages'
 import Error from '@/_utils/Error';
 
 
@@ -14,7 +14,7 @@ function App() {
                 <Route index element={<Home />} />
 
                 <Route path="/home" element={<Home />} />
-                <Route path="/appartements" element={<Appartements />} />
+                <Route path="/appartements/:appartId" element={<Appartements />} />
                 <Route path="/about-us" element={<AboutUs />} />
 
                 <Route path="*" element={<Error />} />
