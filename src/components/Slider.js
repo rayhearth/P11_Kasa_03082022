@@ -18,7 +18,13 @@ const Slider = ({ pictures }) => {
             index: index,
             inProgress: true
         })
-    }
+        setTimeout(()=>
+            launchSlide({
+                index : index,
+                inProgress: false,
+            }), 400)
+        }
+
 
     const prev = () => {
         if (slideAnim.inProgress) return
@@ -29,17 +35,23 @@ const Slider = ({ pictures }) => {
             index: index,
             inProgress: true
         })
+        setTimeout(()=>
+            launchSlide({
+                index : index,
+                inProgress: false,
+            }), 400)
     }
 
     return (
         <div className='slide'>
+            <SliderButton direction='previous' goTo={prev} />
             {pictures.map((picture, index) => slideAnim.index === index && (
                 <div key={'slider-' + index} className='pictSlide'>
                     <img src={picture} alt="" />
                 </div>
             ))}
             <SliderButton direction='next' goTo={next} />
-            <SliderButton direction='previous' goTo={prev} />
+            <div className="slideCount">{slideAnim.index + 1} / {pictures.length}</div>
         </div>
     );
 };

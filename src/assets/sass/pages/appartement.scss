@@ -1,0 +1,49 @@
+.appartSection{
+    padding: 0 100px;
+    .appartHeader{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .appartDesc{
+            h1{
+                font-size: 36px;
+                color: $red;
+            }
+            p{
+                color: $red;
+                font-size: 18px;
+                margin-top: 5px;
+            }
+            ul{
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+                li{
+                    background-color: $red;
+                    border-radius: 15px;
+                    padding: 5px 15px;
+                    margin-right: 5px;
+                    font-size: 14px;
+                    color: white;
+                }
+            }
+        }
+        .hostCard{
+            .host{
+                display: flex;
+                align-items: center;
+                .hostName{
+                    font-size: 18px;
+                    color: $red;
+                    width: 93px;
+                    flex-wrap: wrap;
+                }
+                img{
+                    height: 64px;
+                    width: 64px;
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+}

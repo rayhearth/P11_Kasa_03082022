@@ -5,9 +5,11 @@
 
 @import './components/_banner';
 @import './components/appartCards';
+@import './components/slider';
 
 @import './layout/_header';
 @import './layout/_footer';
 
 @import './pages/error';
-@import './pages/home.scss'
+@import './pages/home.scss';
+@import './pages/appartement.scss'

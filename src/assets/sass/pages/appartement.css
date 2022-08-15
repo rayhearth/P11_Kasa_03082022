@@ -1,0 +1,8 @@
+.appartSection {
+  padding: 0 100px;
+}
+.appartSection .appartHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}/*# sourceMappingURL=appartement.css.map */
