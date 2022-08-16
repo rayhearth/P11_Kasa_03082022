@@ -5,7 +5,8 @@ import { AppartById } from '@/_services/DataManager';
 
 import Error from '@/_utils/Error';
 import Slider from '@/components/Slider';
-import Tag from '../components/Tag';
+import Tag from '@/components/Tag';
+import Rating from '@/components/Rating';
 
 
 const Appartements = () => {
@@ -34,6 +35,7 @@ const Appartements = () => {
                         <div className='hostName'>{appartement.host.name}</div>
                         <img className='hostPicture' src={appartement.host.picture} alt={appartement.host.name} />
                     </div>
+                    <Rating stars={appartement.rating}/>
                 </div>
             </div>
 
