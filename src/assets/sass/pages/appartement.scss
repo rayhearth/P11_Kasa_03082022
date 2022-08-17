@@ -1,24 +1,25 @@
-.appartSection{
+.appartSection {
     padding: 0 100px;
-    .appartHeader{
+    .appartHeader {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        .appartDesc{
-            h1{
+        margin-top: 45px;
+        .appartDesc {
+            h1 {
                 font-size: 36px;
                 color: $red;
             }
-            p{
+            p {
                 color: $red;
                 font-size: 18px;
                 margin-top: 5px;
             }
-            ul{
+            ul {
                 display: flex;
                 align-items: center;
-                margin-top: 20px;
-                li{
+                margin: 20px 0;
+                li {
                     background-color: $red;
                     border-radius: 15px;
                     padding: 5px 15px;
@@ -28,22 +29,28 @@
                 }
             }
         }
-        .hostCard{
-            .host{
+        .hostCard {
+            .host {
                 display: flex;
                 align-items: center;
-                .hostName{
+                .hostName {
                     font-size: 18px;
                     color: $red;
                     width: 93px;
                     flex-wrap: wrap;
                 }
-                img{
+                img {
                     height: 64px;
                     width: 64px;
                     border-radius: 100%;
                 }
             }
         }
+    }
+    .description {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
     }
 }

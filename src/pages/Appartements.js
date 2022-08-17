@@ -7,6 +7,7 @@ import Error from '@/_utils/Error';
 import Slider from '@/components/Slider';
 import Tag from '@/components/Tag';
 import Rating from '@/components/Rating';
+import DropDown from '@/components/DropDown';
 
 
 const Appartements = () => {
@@ -35,8 +36,16 @@ const Appartements = () => {
                         <div className='hostName'>{appartement.host.name}</div>
                         <img className='hostPicture' src={appartement.host.picture} alt={appartement.host.name} />
                     </div>
-                    <Rating stars={appartement.rating}/>
+                    <Rating stars={appartement.rating} />
                 </div>
+            </div>
+            <div className='description'>
+                <DropDown title='Description' text={appartement.description} />
+                <DropDown title='Equipements' text={
+                    <ul>
+                        {appartement.equipments}
+                    </ul>
+                } />
             </div>
 
         </section>

@@ -1,16 +1,18 @@
-@use 'sass:math';
+@use "sass:math";
 
-@import './utils/_variables';
-@import './base/reset';
+@import "./utils/_variables";
+@import "./base/reset";
 
-@import './components/_banner';
-@import './components/appartCards';
-@import './components/slider';
-@import './components/stars';
+@import "./components/_banner";
+@import "./components/appartCards";
 
-@import './layout/_header';
-@import './layout/_footer';
+@import "./components/slider";
+@import "./components/stars";
+@import "./components/dropdown";
 
-@import './pages/error';
-@import './pages/home.scss';
-@import './pages/appartement.scss'
+@import "./layout/_header";
+@import "./layout/_footer";
+
+@import "./pages/error";
+@import "./pages/home.scss";
+@import "./pages/appartement.scss";

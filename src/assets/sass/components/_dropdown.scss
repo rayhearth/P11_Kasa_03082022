@@ -1,0 +1,38 @@
+.dropDown {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 25px;
+    .dropHeader {
+        cursor: pointer;
+        background-color: $red;
+        height: 47px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 15px;
+        color: white;
+        font-size: 18px;
+        padding: 0 10px;
+        img {
+            height: 32px;
+            width: 32px;
+            transition: all 0.3s ease-in-out;
+            // padding: 5px;
+        }
+        img.true {
+            transform: rotate(180deg);
+        }
+    }
+    .text {
+        font-size: 18px;
+        color: $red;
+        background-color: $gray-light;
+        border-radius: 0 0 15px 15px;
+        padding: 50px 20px;
+        margin: -15px 0 15px 0;
+    }
+}

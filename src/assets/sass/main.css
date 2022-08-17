@@ -126,6 +126,48 @@ article h2 {
   color: white;
 }
 
+.rating {
+  display: flex;
+}
+
+.dropDown {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.dropDown .dropHeader {
+  cursor: pointer;
+  background-color: #ff6060;
+  height: 47px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  color: white;
+  font-size: 18px;
+  padding: 0 10px;
+}
+.dropDown .dropHeader img {
+  height: 32px;
+  width: 32px;
+  transition: all 0.3s ease-in-out;
+}
+.dropDown .dropHeader img.true {
+  transform: rotate(180deg);
+}
+.dropDown .text {
+  font-size: 18px;
+  color: #ff6060;
+  background-color: #F6F6F6;
+  border-radius: 0 0 15px 15px;
+  padding: 50px 20px;
+  margin: -15px 0 15px 0;
+}
+
 header {
   display: flex;
 }
@@ -236,4 +278,53 @@ footer section p {
 
 .appartSection {
   padding: 0 100px;
+}
+.appartSection .appartHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 45px;
+}
+.appartSection .appartHeader .appartDesc h1 {
+  font-size: 36px;
+  color: #ff6060;
+}
+.appartSection .appartHeader .appartDesc p {
+  color: #ff6060;
+  font-size: 18px;
+  margin-top: 5px;
+}
+.appartSection .appartHeader .appartDesc ul {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.appartSection .appartHeader .appartDesc ul li {
+  background-color: #ff6060;
+  border-radius: 15px;
+  padding: 5px 15px;
+  margin-right: 5px;
+  font-size: 14px;
+  color: white;
+}
+.appartSection .appartHeader .hostCard .host {
+  display: flex;
+  align-items: center;
+}
+.appartSection .appartHeader .hostCard .host .hostName {
+  font-size: 18px;
+  color: #ff6060;
+  width: 93px;
+  flex-wrap: wrap;
+}
+.appartSection .appartHeader .hostCard .host img {
+  height: 64px;
+  width: 64px;
+  border-radius: 100%;
+}
+.appartSection .description {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
