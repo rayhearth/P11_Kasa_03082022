@@ -1,12 +1,13 @@
 .home {
-    border-radius: 15px;
+    border-radius: $border;
     section {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
         gap: 30px;
         padding: 50px;
         background-color: $gray-light;
         margin: 40px 0;
-        border-radius: 15px;
+        border-radius: $border;
     }
 }

@@ -1,9 +1,11 @@
 article {
     position: relative;
+    width: 340px;
     img {
-        border-radius: 15px;
+        border-radius: $border;
         height: 344px;
-        width: 340px;
+        object-fit: cover;
+        width: 100%;
     }
     h2 {
         color: white;
