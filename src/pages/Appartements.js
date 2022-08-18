@@ -17,7 +17,7 @@ const Appartements = () => {
 
     return appartement === undefined ? (
         <Error />) : (
-        <section className='appartSection'>
+        <section className='appartSection main'>
             <Slider
                 pictures={appartement.pictures}
             />
