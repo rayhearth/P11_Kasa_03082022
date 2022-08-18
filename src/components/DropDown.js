@@ -2,13 +2,15 @@ import React from 'react';
 import { useState } from 'react';
 
 
-const DropDown = ({ title, text }) => {
 
+
+const DropDown = ({ title, text }) => {
 
     const [openDropDown, setDropDown] = useState(false)
 
     return (
         <div className='dropDown'>
+            {/* au click on chgt l'état du dropdown pour le passer à true */}
             <div className='dropHeader' onClick={() => { setDropDown(!openDropDown) }}>
                 <div className='title'>{title}</div>
                 <img src={process.env.PUBLIC_URL + '/img/arrow_up.svg'} className={`arrow ${openDropDown}`} alt="" />

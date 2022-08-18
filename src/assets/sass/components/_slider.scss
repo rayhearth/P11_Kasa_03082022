@@ -1,7 +1,10 @@
 .slide {
     position: relative;
+    display: flex;
+    align-items: center;
     .pictSlide {
         height: 415px;
+        width: 100%;
         img {
             width: 100%;
             height: 100%;
@@ -9,20 +12,14 @@
             border-radius: 15px;
         }
     }
-    button {
+    .btn {
         cursor: pointer;
         position: absolute;
-        top: 0;
-        bottom: 0;
-        height: 30px;
-        width: 30px;
+        height: 79px;
+        width: 46px;
         background: transparent;
         border: none;
         text-indent: -3000px;
-        img {
-            height: 80px;
-            width: 47px;
-        }
     }
     .prev,
     .next {
