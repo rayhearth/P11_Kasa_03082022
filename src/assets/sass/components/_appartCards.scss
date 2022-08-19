@@ -1,18 +1,36 @@
 article {
     position: relative;
-    width: 340px;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: $border;
+        background: linear-gradient(180deg, rgba(white, 0) 50%, rgba(black, 0.8) 100%);
+        aspect-ratio: 1/1;
+        @media screen and (max-width: 425px) {
+            aspect-ratio: 4/3;
+        }
+    }
+    // width: 21.25rem;
     img {
         border-radius: $border;
-        height: 344px;
+        aspect-ratio: 1/1;
         object-fit: cover;
         width: 100%;
+        @media screen and (max-width: 425px) {
+            aspect-ratio: 4/3;
+        }
     }
     h2 {
         color: white;
-        bottom: 20px;
-        left: 20px;
+        bottom: 1.25rem;
+        left: 1.25rem;
         position: absolute;
-        font-size: 18px;
-        width: 300px;
+        font-size: 1.125rem;
+        font-weight: 500;
+        width: 18.75rem;
     }
 }

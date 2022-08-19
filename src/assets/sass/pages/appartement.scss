@@ -1,30 +1,29 @@
 .appartSection {
-    padding: 0 100px;
     .appartHeader {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: 45px;
+        margin-top: 2.813rem;
         .appartDesc {
             h1 {
-                font-size: 36px;
+                font-size: 2.25rem;
                 color: $red;
             }
             p {
                 color: $red;
-                font-size: 18px;
-                margin-top: 5px;
+                font-size: 1.125rem;
+                margin-top: 0.313rem;
             }
             ul {
                 display: flex;
                 align-items: center;
-                margin: 20px 0;
+                margin: 1.25rem 0;
                 li {
                     background-color: $red;
-                    border-radius: 15px;
-                    padding: 5px 15px;
-                    margin-right: 5px;
-                    font-size: 14px;
+                    border-radius: $border;
+                    padding: 0.313rem 0.938rem;
+                    margin-right: 0.313rem;
+                    font-size: 0.875rem;
                     color: white;
                 }
             }
@@ -34,14 +33,14 @@
                 display: flex;
                 align-items: center;
                 .hostName {
-                    font-size: 18px;
+                    font-size: 1.125rem;
                     color: $red;
-                    width: 93px;
+                    width: 5.813rem;
                     flex-wrap: wrap;
                 }
                 img {
-                    height: 64px;
-                    width: 64px;
+                    height: 4rem;
+                    width: 4rem;
                     border-radius: 100%;
                 }
             }
@@ -50,7 +49,7 @@
     .description {
         display: flex;
         justify-content: space-between;
-        gap: 20px;
+        gap: 1.25rem;
         width: 100%;
     }
 }

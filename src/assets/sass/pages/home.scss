@@ -1,13 +1,21 @@
 .home {
     border-radius: $border;
     section {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 30px;
-        padding: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3.125rem;
+        padding: 3.125rem;
         background-color: $gray-light;
-        margin: 40px 0;
+        margin: 2.5rem 0;
         border-radius: $border;
+        @media screen and (max-width: 1280px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media screen and (max-width: 425px) {
+            grid-template-columns: 1fr;
+            background-color: white;
+            gap: 1.25rem;
+            padding: 0;
+        }
     }
 }
