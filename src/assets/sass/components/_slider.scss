@@ -5,6 +5,9 @@
     .pictSlide {
         height: 25.938rem;
         width: 100%;
+        @media screen and (max-width: 425px) {
+            height: 20.938rem;
+        }
         img {
             width: 100%;
             height: 100%;

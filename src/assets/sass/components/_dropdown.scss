@@ -17,10 +17,18 @@
         color: white;
         font-size: 1.125rem;
         padding: 0 0.625rem;
+        @media screen and (max-width: 425px) {
+            font-size: 0.813rem;
+            height: 1.496rem;
+        }
         img {
             height: 2rem;
             width: 2rem;
             transition: all 0.3s ease-in-out;
+            @media screen and (max-width: 425px) {
+                height: 1.151rem;
+                width: 1.151rem;
+            }
             // padding: 5px;
         }
         img.true {
@@ -34,5 +42,9 @@
         border-radius: 0 0 0.938rem 0.938rem;
         padding: 50px 20px;
         margin: -0.938rem 0 0.938rem 0;
+        @media screen and (max-width: 425px) {
+            font-size: 0.813rem;
+            padding: 30px 10px 10px 10px;
+        }
     }
 }
