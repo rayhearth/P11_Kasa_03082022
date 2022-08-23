@@ -1,4 +1,7 @@
 .appartSection {
+    // @media screen and (max-width: 425px) {
+    //     height: 100vh;
+    // }
     .appartHeader {
         display: flex;
         align-items: center;
@@ -6,6 +9,7 @@
         margin-top: 2.813rem;
         @media screen and (max-width: 425px) {
             flex-direction: column;
+            margin-top: 0.938rem;
         }
         .appartDesc {
             @media screen and (max-width: 425px) {
@@ -79,8 +83,11 @@
         justify-content: space-between;
         gap: 1.25rem;
         width: 100%;
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: 768px) {
             flex-direction: column;
+        }
+        @media screen and (max-width: 425px) {
+            
             gap: inherit;
         }
     }

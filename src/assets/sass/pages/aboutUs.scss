@@ -1,4 +1,5 @@
 .aboutUs {
+    height: 100vh;
     .bannerAbout {
         height: 13.938rem;
         position: relative;
@@ -20,7 +21,7 @@
         }
     }
     .container {
-        width: 63.938rem;
+        max-width: 63.938rem;
         margin: 0 auto;
         .dropDown {
             margin-top: 1.875rem;

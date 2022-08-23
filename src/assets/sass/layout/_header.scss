@@ -6,6 +6,9 @@ header {
         justify-content: space-between;
         width: 100%;
         padding: 2.5rem 0;
+        @media screen and (max-width: 425px) {
+            padding: 1.25rem 0;
+        }
         .headerLogo {
             width: 13.125rem;
             height: 4.25rem;

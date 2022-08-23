@@ -44,5 +44,8 @@
         left: 50%;
         font-size: 1.125rem;
         color: white;
+        @media screen and (max-width: 425px) {
+            display: none;
+        }
     }
 }
